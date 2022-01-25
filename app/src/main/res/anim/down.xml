@@ -5,8 +5,8 @@
     <translate
 
         android:duration="3500"
-        android:fromXDelta="100%"
-        android:fromYDelta="0%"
+        android:fromXDelta="0%"
+        android:fromYDelta="100%"
         />
 
     <alpha

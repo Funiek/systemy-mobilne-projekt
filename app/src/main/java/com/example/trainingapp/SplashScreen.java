@@ -25,18 +25,13 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        ImageView logoText = findViewById(R.id.applogoText);
+        ImageView logoText = findViewById(R.id.logoText);
         up = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.up);
         logoText.setAnimation(up);
 
-        ImageView logoLogo = findViewById(R.id.applogoLogo);
+        ImageView logoLogo = findViewById(R.id.logo);
         down = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.down);
         logoLogo.setAnimation(down);
-
-
-//        TextView logoLogo = findViewById(R.id.appname);
-//        down = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.down);
-//        logoLogo.setAnimation(down);
 
 
         new Handler().postDelayed(new Runnable() {
@@ -46,7 +41,7 @@ public class SplashScreen extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
             }
-        }, 3500);
+        }, 4500);
 
     }
 }
