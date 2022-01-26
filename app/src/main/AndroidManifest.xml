@@ -10,9 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingApp">
         <activity
+            android:name=".LegsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LegsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".AbsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PushActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PullActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"/>
-        <activity android:name=".SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
