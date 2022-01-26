@@ -14,7 +14,7 @@
         android:id="@+id/acceptPullData"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
+        android:layout_gravity="center|bottom"
         android:layout_margin="20dp"
         android:text="Zapisz" />
 
