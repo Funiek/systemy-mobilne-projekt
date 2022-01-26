@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingApp">
         <activity
+            android:name=".PullDataActivity"
+            android:exported="false" />
+        <activity
             android:name=".LegsActivity"
             android:exported="false" />
         <activity
