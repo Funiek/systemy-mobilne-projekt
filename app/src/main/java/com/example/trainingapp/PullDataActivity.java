@@ -35,6 +35,10 @@ public class PullDataActivity extends AppCompatActivity {
         TextView ohpOldData = (TextView) findViewById(R.id.ohpOldData);
         TextInputEditText ohpNewData = (TextInputEditText) findViewById(R.id.ohpNewData);
 
+        //modlitewnik
+        TextView modlitewnikOldData = (TextView) findViewById(R.id.modlitewnikOldData);
+        TextInputEditText modlitewnikNewData = (TextInputEditText) findViewById(R.id.modlitewnikNewData);
+
         //wioslowanie
         TextView wioslowanieOldData = (TextView) findViewById(R.id.wioslowanieOldData);
         TextInputEditText wioslowanieNewData = (TextInputEditText) findViewById(R.id.wioslowanieNewData);
@@ -59,6 +63,7 @@ public class PullDataActivity extends AppCompatActivity {
             wioslowanieOldData.setText("Brak danych");
             mlotkiOldData.setText("Brak danych");
             przedramionaOldData.setText("Brak danych");
+            modlitewnikOldData.setText("Brak danych");
         }
         else {
             martwyCiagOldData.setText(pullData.martwy);
@@ -68,6 +73,7 @@ public class PullDataActivity extends AppCompatActivity {
             wioslowanieOldData.setText(pullData.wioslowanie);
             mlotkiOldData.setText(pullData.mlotki);
             przedramionaOldData.setText(pullData.przedramiona);
+            modlitewnikOldData.setText(pullData.modlitewnik);
         }
 
         Button acceptPullData = (Button) findViewById(R.id.acceptPullData);
@@ -75,17 +81,18 @@ public class PullDataActivity extends AppCompatActivity {
         acceptPullData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                saveData(martwyCiagNewData.getText().toString(),negatywNewData.getText().toString(),sciaganieDrazkaNewData.getText().toString(),ohpNewData.getText().toString(),wioslowanieNewData.getText().toString(),mlotkiNewData.getText().toString(),przedramionaNewData.getText().toString());
+                saveData(martwyCiagNewData.getText().toString(),negatywNewData.getText().toString(),sciaganieDrazkaNewData.getText().toString(),ohpNewData.getText().toString(),wioslowanieNewData.getText().toString(),mlotkiNewData.getText().toString(),przedramionaNewData.getText().toString(),modlitewnikNewData.getText().toString());
                 switchActivity();
             }
         });
     }
 
-    private void saveData(String martwyCiag, String negatyw, String sciaganieDrazka, String ohp, String wioslowanie, String mlotki, String przedramiona) {
+    private void saveData(String martwyCiag, String negatyw, String sciaganieDrazka, String ohp, String wioslowanie, String mlotki, String przedramiona, String modlitewnik) {
         AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());
 
         Pull pull = new Pull();
 
+        pull.modlitewnik = modlitewnik;
         pull.martwy = martwyCiag;
         pull.negatyw = negatyw;
         pull.sciaganieDrazkaGora = sciaganieDrazka;

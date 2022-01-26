@@ -44,4 +44,24 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, PullDataActivity.class);
         startActivity(intent);
     }
+
+    public void pushData(View view) {
+        Intent intent = new Intent(MainActivity.this, PushDataActivity.class);
+        startActivity(intent);
+    }
+
+    public void runData(View view) {
+        Intent intent = new Intent(MainActivity.this, RunDataActivity.class);
+        startActivity(intent);
+    }
+
+    public void legsData(View view) {
+        Intent intent = new Intent(MainActivity.this, LegsDataActivity.class);
+        startActivity(intent);
+    }
+
+    public void absData(View view) {
+        Intent intent = new Intent(MainActivity.this, AbsDataActivity.class);
+        startActivity(intent);
+    }
 }

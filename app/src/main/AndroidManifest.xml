@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingApp">
         <activity
+            android:name=".AbsDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LegsDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RunDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PushDataActivity"
+            android:exported="false" />
+        <activity
             android:name=".PullDataActivity"
             android:exported="false" />
         <activity
@@ -17,9 +29,6 @@
             android:exported="false" />
         <activity
             android:name=".RunActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LegsActivity2"
             android:exported="false" />
         <activity
             android:name=".AbsActivity"

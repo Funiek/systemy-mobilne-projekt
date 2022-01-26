@@ -223,6 +223,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:onClick="pushData"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
@@ -323,6 +324,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:onClick="absData"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
@@ -423,6 +425,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:onClick="legsData"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
@@ -523,6 +526,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:onClick="runData"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10.0dp"
