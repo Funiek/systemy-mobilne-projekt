@@ -1,9 +1,13 @@
 package com.example.trainingapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -12,6 +16,41 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        int id = item.getItemId();
+        if(id == R.id.weather){
+
+
+
+            return true;
+        }
+
+        if(id == R.id.youtube){
+
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com/playlist?list=PL4w8mv5aiEVgJHZ-ha41fEhex86WqbyoO"));
+            startActivity(intent);
+            return true;
+        }
+
+        if(id == R.id.aboutus){
+
+            return true;
+        }
+
+        if(id == R.id.privacypolicy){
+
+            return true;
+        }
+
+        return true;
     }
 
     public void pull(View view) {

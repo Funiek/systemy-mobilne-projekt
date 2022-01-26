@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Pogoda"
+        android:id="@+id/weather"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="Kursy na YouTube"
+        android:id="@+id/youtube"
+        android:orderInCategory="102"
+        />
+    <item
+        android:title="O Nas"
+        android:id="@+id/aboutus"
+        android:orderInCategory="101"
+
+
+        />
+    <item
+        android:title="Polityka prywatności"
+        android:id="@+id/privacypolicy"
+        android:orderInCategory="102"
+
+
+        />
+
+</menu>
