@@ -41,12 +41,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(id == R.id.aboutus){
-
+            Intent intent = new Intent(MainActivity.this, CreditsActivity.class);
+            startActivity(intent);
             return true;
         }
 
         if(id == R.id.privacypolicy){
-
+            Intent intent = new Intent(MainActivity.this, PrivacyPolicyActivity.class);
+            startActivity(intent);
             return true;
         }
 

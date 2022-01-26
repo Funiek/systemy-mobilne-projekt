@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingApp">
         <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreditsActivity"
+            android:exported="false" />
+        <activity
             android:name=".AbsDataActivity"
             android:exported="false" />
         <activity
