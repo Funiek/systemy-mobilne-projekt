@@ -4,6 +4,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WeatherActivity">
+    tools:context=".WeatherActivity"
+    android:background="@drawable/background2">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/background3">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10.0dp"
+            android:layout_marginTop="15.0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="400.0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:padding="5.0dp"
+                        android:layout_gravity="center"
+                        android:text="Białystok"
+                        android:textColor="@color/purple_500"
+                        android:textSize="20.0dp"
+                        android:textStyle="bold"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:id="@+id/plecy"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/chmura" />
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/temperatue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:padding="5.0dp"
+                                android:layout_gravity="center"
+                                android:text="23"
+                                android:textColor="@color/purple_500"
+                                android:textSize="55.0dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:padding="5.0dp"
+                                android:layout_gravity="center"
+                                android:text="°C"
+                                android:textColor="@color/purple_500"
+                                android:textSize="55.0dp" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/odlegloscOldData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="5.0dp"
+                            android:layout_gravity="center"
+                            android:text="Odczuwalna temperatura:"
+                            android:textColor="@color/purple_500"
+                            android:textSize="14.0dp" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/temperatue2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:padding="5.0dp"
+                                android:layout_gravity="center"
+                                android:text="23"
+                                android:textColor="@color/purple_500"
+                                android:textSize="25.0dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:padding="5.0dp"
+                                android:layout_gravity="center"
+                                android:text="°C"
+                                android:textColor="@color/purple_500"
+                                android:textSize="25.0dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:padding="5.0dp"
+                        android:layout_gravity="center"
+                        android:text="Jaka pogoda"
+                        android:textColor="@color/purple_500"
+                        android:textSize="14.0dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
