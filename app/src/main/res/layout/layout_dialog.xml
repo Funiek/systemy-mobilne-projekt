@@ -8,5 +8,6 @@
         android:id="@+id/dialogText"
         android:text="Czy spodobała Ci się nasza aplikacja?"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+/>
 </RelativeLayout>

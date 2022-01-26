@@ -278,21 +278,9 @@
                             android:id="@+id/robakNewData"
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content">
-
-
-
                         </com.google.android.material.textfield.TextInputEditText>
-
-
                     </LinearLayout>
-
-
-
-
-
                 </LinearLayout>
-
-
             </LinearLayout>
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -300,15 +288,7 @@
                 android:layout_marginTop="90.0dp"
                 android:orientation="vertical">
             </LinearLayout>
-
         </LinearLayout>
-
-
-
-
-
-
-
     </ScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
