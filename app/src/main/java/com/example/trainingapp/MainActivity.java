@@ -39,4 +39,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, RunActivity.class);
         startActivity(intent);
     }
+
+    public void pullData(View view) {
+        Intent intent = new Intent(MainActivity.this, PullDataActivity.class);
+        startActivity(intent);
+    }
 }
