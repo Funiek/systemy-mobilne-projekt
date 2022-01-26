@@ -5,13 +5,15 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import java.util.List;
+
 @Dao
 public interface PullDao {
     @Query("SELECT * FROM pull ORDER BY uid DESC LIMIT 1")
-    Abs getLastPull();
+    Pull getLastPull();
 
     @Query("SELECT * FROM pull")
-    Abs getAllPull();
+    List<Pull> getAllPull();
 
     @Insert
     void insertPull(Pull... pull);

@@ -5,13 +5,15 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import java.util.List;
+
 @Dao
 public interface PushDao {
     @Query("SELECT * FROM push ORDER BY uid DESC LIMIT 1")
-    Abs getLastPush();
+    Push getLastPush();
 
     @Query("SELECT * FROM push")
-    Abs getAllPush();
+    List<Push> getAllPush();
 
     @Insert
     void insertPush(Push... push);

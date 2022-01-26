@@ -5,13 +5,15 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import java.util.List;
+
 @Dao
 public interface LegsDao {
     @Query("SELECT * FROM legs ORDER BY uid DESC LIMIT 1")
-    Abs getLastLegs();
+    Legs getLastLegs();
 
     @Query("SELECT * FROM legs")
-    Abs getAllLegs();
+    List<Legs> getAllLegs();
 
     @Insert
     void insertLegs(Legs... legs);

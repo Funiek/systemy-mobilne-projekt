@@ -5,13 +5,15 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import java.util.List;
+
 @Dao
 public interface RunDao {
     @Query("SELECT * FROM run ORDER BY uid DESC LIMIT 1")
-    Abs getLastRun();
+    Run getLastRun();
 
     @Query("SELECT * FROM run")
-    Abs getAllRun();
+    List<Run> getAllRun();
 
     @Insert
     void insertRun(Run... run);
