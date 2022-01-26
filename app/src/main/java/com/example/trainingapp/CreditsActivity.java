@@ -37,7 +37,7 @@ public class CreditsActivity extends AppCompatActivity {
 
                 long time = System.currentTimeMillis();
 
-                alarmManager.set(AlarmManager.RTC_WAKEUP,time + 10000,pendingIntent);
+                alarmManager.set(AlarmManager.RTC_WAKEUP,time,pendingIntent);
             }
         });
     }
