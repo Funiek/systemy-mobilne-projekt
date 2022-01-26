@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.weather){
 
-
+            Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
+            startActivity(intent);
 
             return true;
         }
@@ -103,6 +104,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void absData(View view) {
         Intent intent = new Intent(MainActivity.this, AbsDataActivity.class);
+        startActivity(intent);
+    }
+
+    public void weather2(View view) {
+        Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
         startActivity(intent);
     }
 }

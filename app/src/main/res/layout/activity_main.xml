@@ -10,17 +10,6 @@
     tools:context=".MainActivity"
     >
 
-<!--    <androidx.appcompat.widget.Toolbar-->
-<!--        android:id="@+id/toolBar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="?attr/actionBarSize"-->
-<!--        android:background="@color/purple_500"-->
-<!--        android:textAlignment="textEnd"-->
-<!--        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"-->
-<!--        app:title="Trainly"-->
-<!--        app:titleTextColor="#FFF"-->
-<!--        android:gravity="end"-->
-<!--        tools:ignore="MissingConstraints" />-->
 
     <ScrollView
         android:layout_width="fill_parent"

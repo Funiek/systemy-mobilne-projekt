@@ -13,6 +13,9 @@
             android:name=".PrivacyPolicyActivity"
             android:exported="false" />
         <activity
+            android:name=".WeatherActivity"
+            android:exported="false" />
+        <activity
             android:name=".CreditsActivity"
             android:exported="false" />
         <activity
