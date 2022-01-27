@@ -14,9 +14,21 @@
         android:id="@+id/acceptLegsData"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|bottom"
+        android:layout_gravity="end|bottom"
         android:layout_margin="20dp"
         android:text="Zapisz"  />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/image_view"/>
+    <Button
+        android:id="@+id/photoData"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="20dp"
+        android:text="Zdjęcie" />
 
     <ScrollView
         android:layout_width="fill_parent"
