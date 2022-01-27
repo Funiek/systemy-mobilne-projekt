@@ -71,7 +71,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5.0dp"
-                            android:text="10 ćwiczeń"
+                            android:text="8 ćwiczeń"
                             android:textColor="@color/purple_500"
                             android:textSize="20.0dp"
                             android:textStyle="italic"/>
@@ -172,7 +172,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5.0dp"
-                            android:text="12 ćwiczeń"
+                            android:text="7 ćwiczeń"
                             android:textColor="@color/purple_500"
                             android:textSize="20.0dp"
                             android:textStyle="italic"/>
@@ -273,7 +273,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5.0dp"
-                            android:text="8 ćwiczeń"
+                            android:text="3 ćwiczenia"
                             android:textColor="@color/purple_500"
                             android:textSize="20.0dp"
                             android:textStyle="italic"/>
@@ -374,7 +374,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="monospace"
                             android:padding="5.0dp"
-                            android:text="8 ćwiczeń"
+                            android:text="4 ćwiczenia"
                             android:textColor="@color/purple_500"
                             android:textSize="20.0dp"
                             android:textStyle="italic"/>
