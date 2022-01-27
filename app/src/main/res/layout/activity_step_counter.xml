@@ -98,7 +98,7 @@
                             android:fontFamily="monospace"
                             android:padding="5.0dp"
                             android:layout_gravity="center"
-                            android:text="Może czas na koljny spacer?"
+                            android:text="Może czas na kolejny spacer?"
                             android:textColor="@color/purple_500"
                             android:textSize="14.0dp" />
                     </LinearLayout>
