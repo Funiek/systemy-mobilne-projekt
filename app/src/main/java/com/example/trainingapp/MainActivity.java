@@ -107,8 +107,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void weather2(View view) {
-        Intent intent = new Intent(MainActivity.this, WeatherActivity.class);
-        startActivity(intent);
-    }
 }

@@ -271,16 +271,15 @@
 
 
 
-                            <TextView
-                                android:onClick="weather2"
-                                android:id="@+id/weatherdetails"
+                            <Button
+                                android:id="@+id/weatherDetails"
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
                                 android:fontFamily="monospace"
                                 android:padding="5.0dp"
                                 android:textAlignment="center"
                                 android:text=" Szczegóły "
-                                android:textColor="@color/purple_500"
+                                android:textColor="@color/white"
                                 android:textSize="15.0dp" />
 
 

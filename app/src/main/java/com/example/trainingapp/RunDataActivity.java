@@ -35,9 +35,6 @@ public class RunDataActivity extends AppCompatActivity {
 
         TextView weatherData = findViewById(R.id.weatherData);
 
-
-        DecimalFormat df = new DecimalFormat("#.##");
-
         final String API_KEY = "50ef1767f7736a824dae096f8a51da90";
 
         AsyncTask<Void, Void, String> ip = new RetriveIPTask().execute();
@@ -77,6 +74,15 @@ public class RunDataActivity extends AppCompatActivity {
 
         Button acceptRunData = (Button) findViewById(R.id.acceptRunData);
 
+        Button weatherDetails = (Button) findViewById(R.id.weatherDetails);
+
+        weatherDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switchActivityWeather();
+            }
+        });
+
         acceptRunData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,6 +108,11 @@ public class RunDataActivity extends AppCompatActivity {
 
     private void switchActivity() {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    private void switchActivityWeather() {
+        Intent intent = new Intent(this, WeatherActivity.class);
         startActivity(intent);
     }
 }
