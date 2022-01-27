@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="430.0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="horizontal"
@@ -28,11 +28,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="monospace"
-                android:padding="5.0dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text=""
                 android:textColor="@color/purple_500"
-                android:textSize="20.0dp"
-                android:textStyle="bold"/>
+                android:textSize="25.0dp"
+                android:textStyle="bold|italic"/>
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -53,8 +54,15 @@
                 android:id="@+id/tvPullMartwy"
                 android:textColor="@color/purple_500"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
+
+            </TableRow>
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -75,8 +83,15 @@
                 android:id="@+id/tvPullNegatyw"
                 android:textColor="@color/purple_500"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
+
+            </TableRow>
 
             <LinearLayout
                 android:layout_width="fill_parent"
@@ -97,9 +112,15 @@
                 android:id="@+id/tvPullSciaganieDrazka"
                 android:textColor="@color/purple_500"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
 
+            </TableRow>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -119,9 +140,15 @@
                 android:id="@+id/tvPullOHP"
                 android:textColor="@color/purple_500"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
 
+            </TableRow>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -141,8 +168,15 @@
                 android:id="@+id/tvPullModlitewnik"
                 android:textColor="@color/purple_500"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
+
+            </TableRow>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -162,8 +196,15 @@
                 android:id="@+id/tvPullWioslowanie"
                 android:textColor="@color/purple_500"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
+
+            </TableRow>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -185,6 +226,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
+
+            </TableRow>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -204,8 +251,15 @@
                 android:id="@+id/tvPullPrzedramiona"
                 android:textColor="@color/purple_500"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
             </TextView>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dp"
+                android:background="@color/black">
+
+            </TableRow>
         </LinearLayout>
     </LinearLayout>
 
