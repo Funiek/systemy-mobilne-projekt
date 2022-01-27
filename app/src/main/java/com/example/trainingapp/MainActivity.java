@@ -34,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if(id == R.id.stepCounter){
+
+            Intent intent = new Intent(MainActivity.this, StepCounterActivity.class);
+            startActivity(intent);
+
+            return true;
+        }
+
         if(id == R.id.youtube){
 
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtube.com/playlist?list=PL4w8mv5aiEVgJHZ-ha41fEhex86WqbyoO"));

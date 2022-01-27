@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.trainingapp">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainingApp"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".StepCounterActivity"
+            android:exported="false" />
         <activity
             android:name=".PullListActivity"
             android:exported="false" />
