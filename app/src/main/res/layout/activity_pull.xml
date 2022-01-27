@@ -9,7 +9,6 @@
     tools:context=".MainActivity">
 
 
-
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -124,7 +123,6 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1.0"
                         android:orientation="vertical">
-
 
 
                         <TextView
@@ -668,5 +666,11 @@
 
 
     </ScrollView>
+
+    <Button
+        android:id="@+id/pullListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista zrobionych ćwiczeń" />
 
 </LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10.0dp"
+    android:layout_marginTop="15.0dp"
+    android:background="@drawable/backgroundcrop"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="430.0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text=""
+                android:textColor="@color/purple_500"
+                android:textSize="20.0dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="Marwy ciąg:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullMartwy"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="Negatyw:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullNegatyw"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="Ściąganie drążka:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullSciaganieDrazka"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="OHP:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullOHP"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="Modlitewnik:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullModlitewnik"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="Wiosłowanie:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullWioslowanie"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="Młotki:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullMlotki"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:padding="5.0dp"
+                android:text="Przedramiona:"
+                android:textColor="@color/purple_500"
+                android:textSize="14.0dp"/>
+
+            <TextView
+                android:id="@+id/tvPullPrzedramiona"
+                android:textColor="@color/purple_500"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
