@@ -51,12 +51,12 @@ public class RunDataActivity extends AppCompatActivity {
 
         JSONObject jsonWeatherData = jsonWeather.get();
 
-        double feelsLikeTempDouble = (double) Math.round((Double.parseDouble(jsonWeatherData.getJSONObject("main").get("feels_like").toString())-273.15) * 100) / 100;
+        double currentTempDouble = (double) Math.round((Double.parseDouble(jsonWeatherData.getJSONObject("main").get("temp").toString())-273.15) * 100) / 100;
 
         JSONObject temp = new JSONObject(jsonWeatherData.getJSONArray("weather").get(0).toString());
         String weather = temp.get("main").toString();
 
-        if(weather.contains("Rain") || feelsLikeTempDouble < 0) weatherData.setText("Nie");
+        if(weather.contains("Rain") || currentTempDouble < 0) weatherData.setText("Nie");
         else weatherData.setText("Tak");
 
         AppDatabase db = AppDatabase.getDbInstance(this.getApplicationContext());

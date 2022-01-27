@@ -38,7 +38,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         JSONObject jsonLatLong = latLong.get();
 
-        String jsonWeatherDataUrl = "http://api.openweathermap.org/data/2.5/weather?lat="+jsonLatLong.get("lat")+"&lon="+jsonLatLong.get("lon")+"&appid="+API_KEY;
+        String jsonWeatherDataUrl = "http://api.openweathermap.org/data/2.5/weather?lat="+jsonLatLong.get("lat")+"&lon="+jsonLatLong.get("lon")+"&lang=pl&appid="+API_KEY;
 
         AsyncTask<String, Void, JSONObject> jsonWeather = new RetriveJSONTask().execute(jsonWeatherDataUrl);
 
@@ -49,10 +49,14 @@ public class WeatherActivity extends AppCompatActivity {
         double feelsLikeTempDouble = (double) Math.round((Double.parseDouble(jsonWeatherData.getJSONObject("main").get("feels_like").toString())-273.15) * 100) / 100;
 
         JSONObject temp = new JSONObject(jsonWeatherData.getJSONArray("weather").get(0).toString());
-        String weather = temp.get("main").toString();
+        String weather = capitalize(temp.get("description").toString());
 
         temperature.setText(nf.format(currentTempDouble));
         temperature2.setText(nf.format(feelsLikeTempDouble));
         whatWeather.setText(weather);
+    }
+
+    private String capitalize(String line) {
+        return Character.toUpperCase(line.charAt(0)) + line.substring(1);
     }
 }
